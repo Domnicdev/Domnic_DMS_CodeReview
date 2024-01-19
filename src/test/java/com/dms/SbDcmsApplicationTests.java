@@ -47,7 +47,7 @@ class SbDcmsApplicationTests {
 	@Order(2)
 	 void testPerformInsert() {
 		insert = "Inserted";
-		result = controller.PerformInsert(dc);
+		result = controller.performInsert(dc);
 		assertEquals(insert, result);
 	}
 
@@ -55,7 +55,7 @@ class SbDcmsApplicationTests {
 	@Order(3)
 	 void testPerformUpdate() {
 		update = "Updated";
-		result = controller.PerformUpdate(dc1);
+		result = controller.performUpdate(dc1);
 		assertEquals(update, result);
 	}
 	@Test
