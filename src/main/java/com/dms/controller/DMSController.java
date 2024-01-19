@@ -27,13 +27,13 @@ public class DMSController {
 	String result;
 	
 	@PostMapping("PerformInsert")
-	public String performInsert(@RequestBody Doctor doc) {
+	public String PerformInsert(@RequestBody Doctor doc) {
 		dao.save(doc);
 		return "Inserted";
 	}
 	
 	@PutMapping("PerformUpdate")
-	public String performUpdate(@RequestBody Doctor doc) {
+	public String PerformUpdate(@RequestBody Doctor doc) {
 		dao.save(doc);
 		return "Updated";
 	}
